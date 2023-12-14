@@ -1,0 +1,32 @@
+{
+  "name": "koa-middleware-sst-html-polyfill-external-import-map",
+  "description": "Koa.js middleware for server-side transformation (SST) of HTML to polyfill external import maps.",
+  "license": "CC0-1.0",
+  "type": "module",
+  "types": "./out/index.d.ts",
+  "files": [
+    "./src",
+    "./out"
+  ],
+  "scripts": {
+    "build": "bun ./scripts/build.ts && bun ./scripts/generate-dts-bundle.ts"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.12",
+    "@types/path-browserify": "^1.0.2",
+    "bun-types": "latest",
+    "dts-buddy": "^0.4.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "koa": "^2.14.2",
+    "path-browserify": "^1.0.1"
+  },
+  "exports": {
+    ".": {
+      "bun": "./src/index.ts",
+      "import": "./out/index.js",
+      "types": "./out/index.d.ts"
+    }
+  }
+}

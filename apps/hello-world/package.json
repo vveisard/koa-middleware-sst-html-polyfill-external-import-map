@@ -1,0 +1,20 @@
+{
+  "name": "hello-world",
+  "type": "module",
+  "scripts": {
+    "start": "bun ./main.ts"
+  },
+  "dependencies": {
+    "koa": "^2.14.2",
+    "koa-static": "^5.0.0",
+    "koa-middleware-sst-html-polyfill-external-import-map": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.12",
+    "@types/koa-static": "^4.0.4",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "cowsay": "https://esm.sh/cowsay-tag"
+  }
+}
